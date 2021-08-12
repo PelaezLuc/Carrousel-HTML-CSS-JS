@@ -1,0 +1,54 @@
+main {
+    margin-top: 20%;
+}
+
+
+.carrousel {
+    width: 90%;
+    max-width: 120em;
+    background-color: lightskyblue;
+    padding: 2em;
+    overflow-x: hidden;
+}
+
+.carrousel .grande {
+    width: 200%;
+    background-color: orange;
+    padding: 2em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: all .5s ease;
+    transform: translateX(-50%);
+}
+
+.carrousel .img {
+    width: calc ( 100% / 2 -2em );
+    background-color: lime; 
+    min-height: 10vh;
+}
+
+.carrousel .puntos{
+    width: 100%;
+    background-color: rojo;
+    padding: .4em;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrousel .punto {
+    width: 2em;
+    height: 2em;
+    background-color: blue;
+    margin: .2em;
+    list-style: none;
+}
+
+.carrousel .punto.activo{
+    background-color: orange;
+}
